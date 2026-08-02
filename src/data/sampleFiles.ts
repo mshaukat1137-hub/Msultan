@@ -1,0 +1,116 @@
+import { FileItem } from "../types";
+
+export const SAMPLE_FILES: FileItem[] = [
+  // Photos
+  {
+    id: "img_1",
+    name: "Shaukat_HD_Wallpaper.jpg",
+    category: "photo",
+    size: 4850000,
+    sizeFormatted: "4.85 MB",
+    mimeType: "image/jpeg",
+    thumbnailUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&q=80",
+  },
+  {
+    id: "img_2",
+    name: "Camera_20260801_Portrait.jpg",
+    category: "photo",
+    size: 6200000,
+    sizeFormatted: "6.20 MB",
+    mimeType: "image/jpeg",
+    thumbnailUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+  },
+  {
+    id: "img_3",
+    name: "Night_City_Panorama.png",
+    category: "photo",
+    size: 12400000,
+    sizeFormatted: "12.4 MB",
+    mimeType: "image/png",
+    thumbnailUrl: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400&q=80",
+  },
+
+  // Videos
+  {
+    id: "vid_1",
+    name: "Drone_4K_Landscape_Tour.mp4",
+    category: "video",
+    size: 184000000,
+    sizeFormatted: "184 MB",
+    mimeType: "video/mp4",
+    thumbnailUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
+  },
+  {
+    id: "vid_2",
+    name: "Family_Vacation_Highlights.mp4",
+    category: "video",
+    size: 96500000,
+    sizeFormatted: "96.5 MB",
+    mimeType: "video/mp4",
+    thumbnailUrl: "https://images.unsplash.com/photo-1476514525535-ce74f45814d0?w=400&q=80",
+  },
+
+  // Apps (APKs)
+  {
+    id: "app_1",
+    name: "Shaukat_P2P_v2.4.apk",
+    category: "app",
+    size: 28400000,
+    sizeFormatted: "28.4 MB",
+    mimeType: "application/vnd.android.package-archive",
+    appVersion: "v2.4.0",
+    apkPackageName: "com.shaukat.filetransfer",
+    iconName: "Zap",
+  },
+  {
+    id: "app_2",
+    name: "WhatsApp_Messenger.apk",
+    category: "app",
+    size: 54200000,
+    sizeFormatted: "54.2 MB",
+    mimeType: "application/vnd.android.package-archive",
+    appVersion: "v2.26.12",
+    apkPackageName: "com.whatsapp",
+    iconName: "MessageCircle",
+  },
+  {
+    id: "app_3",
+    name: "PUBG_MOBILE_Game.apk",
+    category: "app",
+    size: 940000000,
+    sizeFormatted: "940 MB",
+    mimeType: "application/vnd.android.package-archive",
+    appVersion: "v3.2.0",
+    apkPackageName: "com.tencent.ig",
+    iconName: "Gamepad2",
+  },
+
+  // Documents
+  {
+    id: "doc_1",
+    name: "Wi-Fi_Direct_Technical_Architecture.pdf",
+    category: "document",
+    size: 3400000,
+    sizeFormatted: "3.40 MB",
+    mimeType: "application/pdf",
+    iconName: "FileText",
+  },
+  {
+    id: "doc_2",
+    name: "Shaukat_App_SourceCode_Archive.zip",
+    category: "document",
+    size: 15800000,
+    sizeFormatted: "15.8 MB",
+    mimeType: "application/zip",
+    iconName: "FileArchive",
+  },
+  {
+    id: "doc_3",
+    name: "Annual_Financial_Report_2026.xlsx",
+    category: "document",
+    size: 1800000,
+    sizeFormatted: "1.80 MB",
+    mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    iconName: "Table",
+  },
+];

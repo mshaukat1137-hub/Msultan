@@ -1,0 +1,6 @@
+{
+  "name": "Shaukat",
+  "description": "Fast local P2P file transfer app with Wi-Fi Direct simulation, WebSockets/WebRTC multi-device sync, real-time speed tracking, and full Kotlin / Jetpack Compose Android source code exporter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
