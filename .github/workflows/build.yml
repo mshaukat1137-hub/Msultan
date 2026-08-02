@@ -10,25 +10,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18
+          bun-version: latest
 
       - name: Install Dependencies
-        run: |
-          npm rebuild @tailwindcss/oxide
-          npm install --force
+        run: bun install
 
       - name: Build Web App
-        run: npm run build
+        run: bun run build
 
       - name: Add Capacitor Android
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init Shaukat com.shaukat.app --web-dir dist
-          npx cap add android
-          npx cap copy android
+          bun add @capacitor/core @capacitor/cli @capacitor/android
+          bunx cap init Shaukat com.shaukat.app --web-dir dist
+          bunx cap add android
+          bunx cap copy android
 
       - name: Setup Java
         uses: actions/setup-java@v4
