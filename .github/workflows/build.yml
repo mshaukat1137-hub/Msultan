@@ -16,9 +16,9 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install --include=optional
-
-
+        run: |
+          rm -f package-lock.json bun.lock
+          npm install --force
 
       - name: Build Web App
         run: npm run build
@@ -47,4 +47,3 @@ jobs:
         with:
           name: Shaukat-App-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
-
